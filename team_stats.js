@@ -65,5 +65,17 @@ const team = {
     },
     get games () {
         return this._games;
-    }
+    },
+
+    addPlayer (newFirstName, newLastName, newAge) {
+        let player = {
+            firstName: newFirstName,
+            lastName: newLastName,
+            age: newAge
+        }
+        this.players.push(player)
+    },
+    
+
 };
+addPlayer('Bugs', 'Bunny', 76)
