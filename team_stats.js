@@ -23,7 +23,7 @@ For example, you might want to get the total number of games your team has playe
             Each game should be an object containing three properties: opponent, teamPoints, opponentPoints.
 
         Getting Data:
-        5.  Create a getter method called players to retrieve the _players property. Inside the getter method, return the _players property.
+        5.  Create a getter method called 'players' to retrieve the _players property. Inside the getter method, return the _players property.
             For the scope of this project, we won’t need to create setter methods, because we don’t want anyone to change the data saved to the properties.
 
         6.  Create another getter method called games to retrieve the _games property. Inside the getter method, return the _games property.
@@ -58,5 +58,12 @@ const team = {
         {opponent: 'Reds', teamPoints: 50, opponentPoints: 70},
         {opponent: 'Blues', teamPoints: 49, opponentPoints: 93},
         {opponent: 'Eagles', teamPoints: 1, opponentPoints: 38}
-    ]
+    ],
+    //getters
+    get players () {
+        return this._players;
+    },
+    get games () {
+        return this._games;
+    }
 };
