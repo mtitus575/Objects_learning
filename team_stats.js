@@ -78,4 +78,5 @@ const team = {
     
 
 };
-addPlayer('Bugs', 'Bunny', 76)
+team.addPlayer('Bugs', 'Bunny', 76)
+console.log(team.players)
