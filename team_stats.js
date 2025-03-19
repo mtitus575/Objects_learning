@@ -46,3 +46,5 @@ For example, you might want to get the total number of games your team has playe
             Our team played against the 'Titans' where we scored 100 points and the opponent scored 98 points.
             Log the team‘s _games property to check that our new game record was properly added.
     */
+
+//Add code below:
