@@ -16,11 +16,11 @@ For example, you might want to get the total number of games your team has playe
             Add a _players property and a _games property and initialize both to empty arrays.
         
         3.  Next, populate the empty_players array with three players. 
-            Each player should be an object containing three properties: firstName, lastName, and age. 
-            Put each player on a new line to prevent the line from getting too long.
+            Each newPlayer should be an object containing three properties: firstName, lastName, and age. 
+            Put each newPlayer on a new line to prevent the line from getting too long.
 
         4.  Let’s do the same for our _games array. Populate the empty array with three games. 
-            Each game should be an object containing three properties: opponent, teamPoints, opponentPoints.
+            Each newGame should be an object containing three properties: opponent, teamPoints, opponentPoints.
 
         Getting Data:
         5.  Create a getter method called 'players' to retrieve the _players property. Inside the getter method, return the _players property.
@@ -29,22 +29,22 @@ For example, you might want to get the total number of games your team has playe
         6.  Create another getter method called games to retrieve the _games property. Inside the getter method, return the _games property.
 
         Adding Data:
-        7.  We want to add a new player to our team. Add a .addPlayer() method to the team object. 
+        7.  We want to add a new newPlayer to our team. Add a .addPlayer() method to the team object. 
             This method should take in three parameters: newFirstName, newLastName, and newAge.
-            Inside the method, create a 'player' object and setting the three parameters to be the values for the object’s three properties: firstName, lastName, age. 
-            Finally, add the player object to the team‘s _players array.
+            Inside the method, create a 'newPlayer' object and setting the three parameters to be the values for the object’s three properties: firstName, lastName, age. 
+            Finally, add the newPlayer object to the team‘s _players array.
         
-        8.  Below the team object, let’s try out our new .addPlayer() method to add a new player: Bugs Bunny, age 76.
-            Log the team‘s _players property to check that our new player was added.
+        8.  Below the team object, let’s try out our new .addPlayer() method to add a new newPlayer: Bugs Bunny, age 76.
+            Log the team‘s _players property to check that our new newPlayer was added.
 
-        9.  The scorekeeper has some new information for us! Create a method for adding game results called 
+        9.  The scorekeeper has some new information for us! Create a method for adding newGame results called 
             addGame that takes three parameters: newOpponent, newTeamPoints, newOpponentPoints.
-            Inside the .addGame() method, create a game object by setting the three parameters to be the values for the 
-            object’s three properties: opponent, teamPoints, opponentPoints. Add the game object to the team‘s _games array.
+            Inside the .addGame() method, create a newGame object by setting the three parameters to be the values for the 
+            object’s three properties: opponent, teamPoints, opponentPoints. Add the newGame object to the team‘s _games array.
 
-        10. Finally, below our team object, use the .addGame() method to add a record of a new game. 
+        10. Finally, below our team object, use the .addGame() method to add a record of a new newGame. 
             Our team played against the 'Titans' where we scored 100 points and the opponent scored 98 points.
-            Log the team‘s _games property to check that our new game record was properly added.
+            Log the team‘s _games property to check that our new newGame record was properly added.
     */
 
 //Add code below:
@@ -61,34 +61,34 @@ const team = {
         {opponent: 'Eagles', teamPoints: 1, opponentPoints: 38}
     ],
     //getters are used to return the properties and the array of object they contain
-    get players () { 
+    get players() { 
         return this._players;
     },
-    get games () {
+    get games() {
         return this._games;
     },
 
     //These methods add functionality to the code. 
     //It allows us to add new players with 3 arguments. This will become a new Object and the keys below will be filled with values (the arguments)
-    addPlayer (newFirstName, newLastName, newAge) {
-        let player = {
+    addPlayer(newFirstName, newLastName, newAge) {
+        let newPlayer = {
             firstName: newFirstName,
             lastName: newLastName,
             age: newAge
         };
-        this.players.push(player); //This line is used to add the newly created player object to the team's array of objects
+        this.players.push(newPlayer); //This line is used to add the newly created newPlayer object to the team's array of objects
     },
-    addGame (newOpponent, newTeamPoints, newOpponentPoints){
-        let game = {
+    addGame(newOpponent, newTeamPoints, newOpponentPoints){
+        let newGame = {
             opponent: newOpponent,
             teamPoints: newTeamPoints,
             opponentPoints: newOpponentPoints
         };
-        this.games.push(game);
+        this.games.push(newGame);
     }
 
 };
-team.addPlayer('Bugs', 'Bunny', 76) //Adds a new player using the method on the team object
+team.addPlayer('Bugs', 'Bunny', 76) //Adds a new newPlayer using the method on the team object
 console.log(team.players)
-team.addGame('Titans', 100, 98); //Adds a new game using the method on the team object
+team.addGame('Titans', 100, 98); //Adds a new newGame using the method on the team object
 console.log(team.games)
