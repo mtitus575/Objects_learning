@@ -49,6 +49,10 @@ For example, you might want to get the total number of games your team has playe
 
 //Add code below:
 const team = {
-    _players: [],
+    _players: [
+        {firstName: 'Jack', lastName: 'Daniels', age: 99},
+        {firstName: 'John', lastName: 'Travolta', age: 43},
+        {firstName: 'James', lastName: 'Bond', age: 32}
+    ],
     _games: []
 };
