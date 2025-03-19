@@ -31,7 +31,7 @@ For example, you might want to get the total number of games your team has playe
         Adding Data:
         7.  We want to add a new player to our team. Add a .addPlayer() method to the team object. 
             This method should take in three parameters: newFirstName, newLastName, and newAge.
-            Inside the method, create a player object by setting the three parameters to be the values for the object’s three properties: firstName, lastName, age. 
+            Inside the method, create a 'player' object and setting the three parameters to be the values for the object’s three properties: firstName, lastName, age. 
             Finally, add the player object to the team‘s _players array.
         
         8.  Below the team object, let’s try out our new .addPlayer() method to add a new player: Bugs Bunny, age 76.
@@ -48,15 +48,3 @@ For example, you might want to get the total number of games your team has playe
     */
 
 //Add code below:
-const team = {
-    _players: [
-        player1 = {firstName, lastName, age}, 
-        player2 = {firstName, lastName, age},
-        player3 = {firstName, lastName, age}
-    ],
-    _games: [
-        game1 = {opponent, teamPoints, opponentPoints},
-        game2 = {opponent, teamPoints, opponentPoints},
-        game3 = {opponent, teamPoints, opponentPoints}
-    ]
-};
