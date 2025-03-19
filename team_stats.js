@@ -49,5 +49,6 @@ For example, you might want to get the total number of games your team has playe
 
 //Add code below:
 const team = {
-
+    _players: [],
+    _games: []
 };
