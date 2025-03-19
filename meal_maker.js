@@ -71,7 +71,7 @@ const menu ={
 };
 
 menu.meal = 'Burger';
-menu.price = '10.99';
+menu.price = 10.99;
 
 
 console.log(menu.todaysSpecial)

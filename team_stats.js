@@ -48,3 +48,15 @@ For example, you might want to get the total number of games your team has playe
     */
 
 //Add code below:
+const team = {
+    _players: [ {
+        player1: {firstName, lastName, age},
+        player2: {firstName, lastName, age},
+        player3: {firstName, lastName, age}
+    }],
+    _games: [{
+        game1: {opponent, teamPoints, opponentPoints},
+        game2: {opponent, teamPoints, opponentPoints},
+        game3: {opponent, teamPoints, opponentPoints}
+    }]
+};
