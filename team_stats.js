@@ -48,35 +48,47 @@ For example, you might want to get the total number of games your team has playe
     */
 
 //Add code below:
+// a Object called team that has 2 properties (_players, _games), 2 getters (players, games), and 2 methods (addPlayer(), and addGame())
 const team = {
-    _players: [
-        {firstName: 'Jack', lastName: 'Daniels', age: 99},
-        {firstName: 'John', lastName: 'Travolta', age: 43},
+    _players: [ //The value of this property is an array.
+        {firstName: 'Jack', lastName: 'Daniels', age: 99}, // The array holds 3 objects
+        {firstName: 'John', lastName: 'Travolta', age: 43}, // Each object has 3 of their own properties
         {firstName: 'James', lastName: 'Bond', age: 32}
     ],
-    _games: [
+    _games: [ //The structure is the same as above
         {opponent: 'Reds', teamPoints: 50, opponentPoints: 70},
         {opponent: 'Blues', teamPoints: 49, opponentPoints: 93},
         {opponent: 'Eagles', teamPoints: 1, opponentPoints: 38}
     ],
-    //getters
-    get players () {
+    //getters are used to return the properties and the array of object they contain
+    get players () { 
         return this._players;
     },
     get games () {
         return this._games;
     },
 
+    //These methods add functionality to the code. 
+    //It allows us to add new players with 3 arguments. This will become a new Object and the keys below will be filled with values (the arguments)
     addPlayer (newFirstName, newLastName, newAge) {
         let player = {
             firstName: newFirstName,
             lastName: newLastName,
             age: newAge
-        }
-        this.players.push(player)
+        };
+        this.players.push(player); //This line is used to add the newly created player object to the team's array of objects
     },
-    
+    addGame (newOpponent, newTeamPoints, newOpponentPoints){
+        let game = {
+            opponent: newOpponent,
+            teamPoints: newTeamPoints,
+            opponentPoints: newOpponentPoints
+        };
+        this.games.push(game);
+    }
 
 };
-team.addPlayer('Bugs', 'Bunny', 76)
+team.addPlayer('Bugs', 'Bunny', 76) //Adds a new player using the method on the team object
 console.log(team.players)
+team.addGame('Titans', 100, 98); //Adds a new game using the method on the team object
+console.log(team.games)
