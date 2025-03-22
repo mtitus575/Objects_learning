@@ -20,3 +20,19 @@
 
     8. Print out "myPet" to the terminal again
 */
+
+// Add code below:
+const myPet = {
+    name: 'Sudo',
+    type: 'dog',
+    breed: 'Poodle',
+    age: 7,
+    friends: ['Bit', 'Byte', 'Data']
+};
+
+myPet.color =  'black';
+myPet.breed = 'Beagle';
+delete myPet.friends[2];
+myPet.friends[2] = 'Chip';
+
+console.log(myPet);
